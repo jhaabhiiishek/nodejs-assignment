@@ -19,42 +19,7 @@ A modular, scalable backend API for a fictional **B2B Order Management Platform*
 
 ## 🏗️ Architecture  
 
-The project follows a **modular MVC-style architecture** for scalability and maintainability:
-
-ASSIGNMENT-NODEJS/\n
-│
-├── controllers/        
-│   ├── admin.js
-│   ├── order.js
-│   ├── products.js
-│   └── users.js
-│
-├── models/             
-│   ├── inventory.js
-│   ├── order.js
-│   ├── orderItem.js
-│   ├── orderStatusHistory.js
-│   ├── product.js
-│   ├── productUom.js
-│   └── user.js
-│
-├── routes/            
-│   ├── admin.js
-│   ├── devAuth.js
-│   ├── order.js
-│   ├── product.js
-│   └── user.js
-│
-├── util/              
-│   └── db.js
-│
-├── index.js            
-├── docker-compose.yml 
-├── Dockerfile          
-├── package.json        
-
-
-
+The project follows a **modular MVC-style architecture** for scalability and maintainability
 
 - **Models**: Represent relational DB tables with Sequelize ORM.  
 - **Controllers**: Contain business logic (CRUD, validations, stock handling, order lifecycle).  
