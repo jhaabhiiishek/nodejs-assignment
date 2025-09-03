@@ -21,7 +21,7 @@ A modular, scalable backend API for a fictional **B2B Order Management Platform*
 
 The project follows a **modular MVC-style architecture** for scalability and maintainability:
 
-ASSIGNMENT-NODEJS/
+ASSIGNMENT-NODEJS/\n
 │
 ├── controllers/        
 │   ├── admin.js
