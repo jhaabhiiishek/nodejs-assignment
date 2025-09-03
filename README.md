@@ -34,8 +34,8 @@ The project follows a **modular MVC-style architecture** for scalability and mai
 ### 1. Clone the Repo  
 
 ```bash
-git clone https://github.com/<your-username>/assignment-nodejs.git
-cd assignment-nodejs
+git clone https://github.com/jhaabhiiishek/nodejs-assignment.git
+cd nodejs-assignment
 ```
 
 ### 2. Install Dependencies
