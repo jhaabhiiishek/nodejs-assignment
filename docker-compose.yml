@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  assign_app:
+    container_name: assign_nodejs
+    build: .
+    image: abhiiishek/assign_nodejs
+    ports:
+      - "3000:3000"
+    environment:
+      - PG_DB=assign_node_db 
+      - PG_USER=abhishek
+      - PG_PASSWORD=12345
+      - PG_HOST=node_db
+    depends_on:
+      - node_db
+    restart: always
+
+  node_db:
+    container_name: node_db
+    image: postgres
+    environment:
+      - POSTGRES_DB=assign_node_db
+      - POSTGRES_USER=abhishek
+      - POSTGRES_PASSWORD=12345
+    ports:
+      - "5432:5432"
+    volumes:
+      - node_db_data:/var/lib/postgresql/data
+
+volumes:
+  node_db_data: {}
